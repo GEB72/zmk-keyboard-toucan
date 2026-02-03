@@ -19,7 +19,7 @@
         };
     };
 
-		behaviors {
+    behaviors {
         hm: home_row {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -30,13 +30,13 @@
         };
     };
 
-		input_processors {
-			zip_mouse_layer: zip_mouse_layer {
-					compatible = "zmk,input-processor-temp-layer";
-					#input-processor-cells = <2>;
-					require-prior-idle-ms = <2000>;
-			};
-		};
+    input_processors {
+      zip_mouse_layer: zip_mouse_layer {
+          compatible = "zmk,input-processor-temp-layer";
+          #input-processor-cells = <2>;
+          require-prior-idle-ms = <2000>;
+      };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -61,7 +61,7 @@
             >;
         };
 
-				num {
+        num {
             display-name = "NUM";
             bindings = <
                 &kp ESC &kp N1 &kp N2 &kp N3 &kp N4  &kp N5      &trans   &trans  &trans &trans &trans &kp ESC
@@ -71,7 +71,7 @@
             >;
         };
 
-				sym {
+        sym {
             display-name = "SYM";
             bindings = <
                 &kp ESC &kp SQT   &kp LT    &kp GT    &kp DQT   &kp APOS    &kp SEMI &kp COLON &kp COLON &kp LBKT &kp RBKT  &kp ESC
