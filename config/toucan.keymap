@@ -41,7 +41,7 @@
             bindings = <
                 &kp ESC   &kp Q       &kp W      &kp E       &kp R       &kp T       &kp Y    &kp U       &kp I       &kp O      &kp P         &kp ESC
                 &mo 1     &hm LGUI A  &hm LALT S &hm LCTRL D &hm LSHFT F &kp G       &kp H    &hm RSHFT J &hm RCTRL K &hm RALT L &hm RGUI SEMI &mo 2
-                &kp LCTRL &kp Z       &kp X      &kp C       &kp V       &kp B       &kp N    &kp M       &kp COMMA   &kp DOT    &kp FSLH      &studio_unlock
+                &kp LCTRL &kp Z       &kp X      &kp C       &hm 1 V     &kp B       &kp N    &hm 2 M     &kp COMMA   &kp DOT    &kp FSLH      &studio_unlock
                                                  &mo 4       &kp TAB     &kp SPACE   &kp BSPC &kp RET     &mo 4
             >;
         };
@@ -79,20 +79,20 @@
         func {
             display-name = "FUNC";
             bindings = <
-                &kp ESC &kp F1  &kp F2  &kp F3 &kp F4  &kp F5      &trans   &trans  &trans &trans &trans &kp ESC
-                &trans  &kp F6  &kp F7  &kp F8 &kp F9  &kp F10     &trans   &trans  &trans &trans &trans &trans
-                &trans  &kp F11 &kp F12 &trans &trans  &trans      &trans   &trans  &trans &trans &trans &trans
-                                      &trans   &kp TAB &kp SPACE   &kp BSPC &kp RET &trans
+                &kp ESC &kp F1  &kp F2  &kp F3 &kp F4  &kp F5      &C_MUTE  &C_VOL_DN &C_VOL_UP &trans &trans &kp ESC
+                &trans  &kp F6  &kp F7  &kp F8 &kp F9  &kp F10     &trans   &trans    &trans    &trans &trans &trans
+                &trans  &kp F11 &kp F12 &trans &trans  &trans      &trans   &trans    &trans    &trans &trans &trans
+                                      &trans   &kp TAB &kp SPACE   &kp BSPC &kp RET   &trans
             >;
         };
 
         mous {
             display-name = "MOUS";
             bindings = <
-                &trans &trans &trans &mkp MB4  &mkp MB5  &trans    &trans &trans &trans &trans &trans &kp ESC
-                &trans &trans &trans &mkp MB1  &mkp MB2  &trans    &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans    &trans    &trans    &trans &trans &trans &trans &trans &trans
-                                     &trans    &kp BSPC  &kp RET   &trans &trans &trans
+                &trans &trans &trans         &trans       &trans         &trans            &trans   &trans   &trans &trans &trans &trans
+                &trans &trans &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_DOWN &msc SCRL_RIGHT   &trans   &trans   &trans &trans &trans &trans
+                &trans &trans &trans         &trans       &trans         &trans            &trans   &trans   &trans &trans &trans &trans
+                                             &trans       &mkp MB2       &mkp MB1          &mkp MB4 &mkp MB5 &trans
             >;
         };
 
