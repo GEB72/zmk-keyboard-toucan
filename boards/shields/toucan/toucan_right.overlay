@@ -77,5 +77,5 @@
     compatible = "zmk,input-listener";
 
     // Optional
-    input-processors = <&zip_mouse_layer 5 1000>;
+    input-processors = <&zip_temp_layer 5 1000>;
 };
