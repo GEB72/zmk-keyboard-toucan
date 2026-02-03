@@ -26,10 +26,25 @@
         hm: home_row {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <230>;
             quick-tap-ms = <175>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
+        };
+        lt2: layer_tap2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <230>;
+            quick-tap-ms = <175>;
+            bindings = <&mo>, <&kp>;
+            display-name = "Layer-Tap";
+        };
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <220>;
+            bindings = <&kp N1>, <&kp N2>
         };
     };
 
@@ -39,9 +54,9 @@
         base {
             display-name = "BASE";
             bindings = <
-                &kp ESC   &kp Q       &kp W      &kp E       &kp R       &kp T       &kp Y    &kp U       &kp I       &kp O      &kp P         &kp ESC
-                &mo 1     &hm LGUI A  &hm LALT S &hm LCTRL D &hm LSHFT F &kp G       &kp H    &hm RSHFT J &hm RCTRL K &hm RALT L &hm RGUI SEMI &mo 2
-                &kp LCTRL &kp Z       &kp X      &kp C       &hm 1 V     &kp B       &kp N    &hm 2 M     &kp COMMA   &kp DOT    &kp FSLH      &studio_unlock
+                &kp ESC   &td0 Q ESC &kp W      &kp E       &kp R       &kp T       &kp Y    &kp U       &kp I       &kp O      &kp P         &kp ESC
+                &mo 1     &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F &kp G       &kp H    &hm RSHFT J &hm RCTRL K &hm RALT L &hm RGUI SEMI &mo 2
+                &kp LCTRL &kp Z      &kp X      &kp C       &lt2 3 V     &kp B      &kp N    &lt2 3 M    &kp COMMA   &kp DOT    &kp FSLH      &studio_unlock
                                                  &mo 4       &kp TAB     &kp SPACE   &kp BSPC &kp RET     &mo 4
             >;
         };
