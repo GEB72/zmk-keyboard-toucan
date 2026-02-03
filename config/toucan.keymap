@@ -14,14 +14,6 @@
 #define MOUS 5
 
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
-
     behaviors {
         hm: home_row {
             compatible = "zmk,behavior-hold-tap";
@@ -56,7 +48,7 @@
             bindings = <
                 &kp ESC   &td0       &kp W      &kp E       &kp R       &kp T       &kp Y    &kp U       &kp I       &kp O      &kp P         &kp ESC
                 &mo 1     &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F &kp G       &kp H    &hm RSHFT J &hm RCTRL K &hm RALT L &hm RGUI SEMI &mo 2
-                &kp LCTRL &kp Z      &kp X      &kp C       &lt2 3 V    &kp B       &kp N    &lt2 3 M    &kp COMMA   &kp DOT    &kp FSLH      &studio_unlock
+                &kp LCTRL &kp Z      &kp X      &kp C       &lt 3 V     &kp B       &kp N    &lt 3 M     &kp COMMA   &kp DOT    &kp FSLH      &studio_unlock
                                                 &mo 4       &kp TAB     &kp SPACE   &kp BSPC &kp RET     &mo 4
             >;
         };
