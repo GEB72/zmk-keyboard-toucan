@@ -57,7 +57,7 @@
    pinctrl-names = "default", "sleep";
    cs-gpios = <&gpio0 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;  // pull-up to ensure CS is !asserted when asleep
    glidepoint:  glidepoint@0 {
-        compatible = "cirque,pinnacle";
+        compatible = "cirque,pinnacle,input-listener";
         reg = <0>;
         spi-max-frequency = <1000000>;
         status = "okay";
@@ -74,7 +74,6 @@
 
 &glidepoint_split {
     device = <&glidepoint>;
-    compatible = "zmk,input-listener";
 
     // Optional
     input-processors = <&zip_temp_layer 5 1000>;
