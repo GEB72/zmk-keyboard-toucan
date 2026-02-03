@@ -27,7 +27,7 @@
             quick-tap-ms = <175>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
-        }
+        };
     };
 
 		input_processors {
@@ -64,9 +64,9 @@
 				num {
             display-name = "NUM";
             bindings = <
-                &kp ESC &kp N1 &kp N2 &kp N3 &kp N4  &kp N5      &trans &trans &trans &trans &trans &ESC
-                &trans  &kp N6 &kp N7 &kp N8 &kp N9  &kp N0      &trans &trans &trans &trans &trans &trans
-                &trans  &trans &trans &trans &trans  &trans      &trans &trans &trans &trans &trans &trans
+                &kp ESC &kp N1 &kp N2 &kp N3 &kp N4  &kp N5      &trans   &trans  &trans &trans &trans &kp ESC
+                &trans  &kp N6 &kp N7 &kp N8 &kp N9  &kp N0      &trans   &trans  &trans &trans &trans &trans
+                &trans  &trans &trans &trans &trans  &trans      &trans   &trans  &trans &trans &trans &trans
                                       &trans &kp TAB &kp SPACE   &kp BSPC &kp RET &trans
             >;
         };
@@ -84,7 +84,7 @@
         func {
             display-name = "FUNC";
             bindings = <
-                &kp ESC &kp F1  &kp F2  &kp F3 &kp F4  &kp F5      &trans   &trans  &trans &trans &trans &ESC
+                &kp ESC &kp F1  &kp F2  &kp F3 &kp F4  &kp F5      &trans   &trans  &trans &trans &trans &kp ESC
                 &trans  &kp F6  &kp F7  &kp F8 &kp F9  &kp F10     &trans   &trans  &trans &trans &trans &trans
                 &trans  &kp F11 &kp F12 &trans &trans  &trans      &trans   &trans  &trans &trans &trans &trans
                                       &trans   &kp TAB &kp SPACE   &kp BSPC &kp RET &trans
