@@ -39,6 +39,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+        combo_bspc {
+            timeout-ms = <60>;
+            key-positions = <14 15>, <20 21>;
+            bindings = <&kp BSPC>;
+        };
+        combo_enter {
+            timeout-ms = <40>;
+            key-positions = <15 16>, <19 20>;
+            bindings = <&kp ret>;
+        };
+    };    
+
     keymap {
         compatible = "zmk,keymap";
 
