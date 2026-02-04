@@ -75,10 +75,10 @@
         sym {
             display-name = "SYM";
             bindings = <
-                &kp ESC &kp SQT   &kp LT    &kp GT    &kp DQT   &kp APOS    &kp SEMI &kp SEMI  &kp COLON &kp LBKT &kp RBKT  &kp ESC
-                &trans  &kp EXCL  &kp MINUS &kp PLUS  &kp EQUAL &kp HASH    &kp AMPS &kp COLON &kp LPAR  &kp RPAR &kp PRCNT &trans
-                &trans  &kp CARET &kp FSLH  &kp ASTRK &kp COMMA &kp FSLH    &kp PIPE &kp DLLR  &kp LBRC  &kp RBRC &kp QMARK &trans
-                                            &trans    &kp TAB   &kp SPACE   &kp BSPC &kp RET   &trans
+                &kp ESC &kp SQT   &kp LT    &kp GT    &kp DQT   &kp APOS    &kp AMPS  &kp SEMI  &kp LBRC  &kp RBRC &kp PRCNT &kp ESC
+                &trans  &kp EXCL  &kp MINUS &kp PLUS  &kp EQUAL &kp HASH    &kp PIPE  &kp COLON &kp LPAR  &kp RPAR &kp AT    &trans
+                &trans  &kp CARET &kp FSLH  &kp ASTRK &kp FSLH  &kp TILDE   &kp GRAVE &kp DLLR  &kp LBKT  &kp RBKT &kp QMARK &trans
+                                            &trans    &kp TAB   &kp SPACE   &kp BSPC  &kp RET   &trans
             >;
         };
 
