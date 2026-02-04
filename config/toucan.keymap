@@ -49,7 +49,7 @@
         combo_enter {
             timeout-ms = <40>;
             key-positions = <15 16>, <19 20>;
-            bindings = <&kp ret>;
+            bindings = <&kp RET>;
         };
     };    
 
