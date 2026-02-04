@@ -95,10 +95,10 @@
         mous {
             display-name = "MOUS";
             bindings = <
-                &trans &trans &trans         &trans       &trans         &trans            &trans   &trans   &trans &trans &trans &trans
-                &trans &trans &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_DOWN &msc SCRL_RIGHT   &trans   &trans   &trans &trans &trans &trans
-                &trans &trans &trans         &trans       &mkp MB4       &mkp MB5          &trans   &trans   &trans &trans &trans &trans
-                                             &trans       &mkp MB2       &mkp MB1          &mkp MB1 &mkp MB2 &trans
+                &trans &trans   &trans   &trans    &trans    &trans     &trans   &trans   &trans &trans &trans &trans
+                &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans     &trans   &trans   &trans &trans &trans &trans
+                &trans &trans   &trans   &trans    &mkp MB4  &mkp MB5   &trans   &trans   &trans &trans &trans &trans
+                                         &trans    &mkp MB2  &mkp MB1   &mkp MB1 &mkp MB2 &trans
             >;
         };
 
