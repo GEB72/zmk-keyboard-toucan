@@ -9,6 +9,7 @@
 #define BASE 0
 #define NAV  1
 #define NUM  2
+
 #define SYM  3
 #define FUNC 4
 #define MOUS 5
@@ -20,7 +21,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <230>;
             quick-tap-ms = <200>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
         l2: layer_tap2 {
