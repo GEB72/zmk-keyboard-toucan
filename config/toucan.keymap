@@ -92,7 +92,7 @@
             bindings = <
                 &kp ESC &kp SQT   &kp LT    &kp GT    &kp DQT   &kp APOS    &kp AMPS  &kp SEMI  &kp LBRC  &kp RBRC &kp PRCNT &kp ESC
                 &trans  &kp EXCL  &kp MINUS &kp PLUS  &kp EQUAL &kp HASH    &kp PIPE  &kp COLON &kp LPAR  &kp RPAR &kp AT    &trans
-                &trans  &kp CARET &kp FSLH  &kp ASTRK &kp FSLH  &kp TILDE   &kp GRAVE &kp DLLR  &kp LBKT  &kp RBKT &kp QMARK &trans
+                &trans  &kp CARET &kp FSLH  &kp ASTRK &kp BSLH  &kp TILDE   &kp GRAVE &kp DLLR  &kp LBKT  &kp RBKT &kp QMARK &trans
                                             &trans    &kp TAB   &kp SPACE   &kp BSPC  &kp RET   &trans
             >;
         };
