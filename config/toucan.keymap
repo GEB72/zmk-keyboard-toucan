@@ -31,12 +31,6 @@
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
         };
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <220>;
-            bindings = <&kp Q>, <&kp ESC>;
-        };
     };
 
     combos {
@@ -79,10 +73,10 @@
         num {
             display-name = "NUM";
             bindings = <
-                &kp ESC &kp N1 &kp N2 &kp N3 &kp N4  &kp N5      &trans   &trans  &trans &trans &trans &kp ESC
-                &trans  &kp N6 &kp N7 &kp N8 &kp N9  &kp N0      &trans   &trans  &trans &trans &trans &trans
-                &trans  &trans &trans &trans &trans  &trans      &trans   &trans  &trans &trans &trans &trans
-                                      &trans &kp TAB &kp SPACE   &kp BSPC &kp RET &trans
+                &kp ESC &kp N1 &kp N2 &kp N3 &kp N4   &kp N5      &trans   &trans  &trans &trans &trans &kp ESC
+                &trans  &kp N6 &kp N7 &kp N8 &kp N9   &kp N0      &trans   &trans  &trans &trans &trans &trans
+                &trans  &trans &trans &trans &kp DOT  &trans      &trans   &trans  &trans &trans &trans &trans
+                                      &trans &kp TAB  &kp SPACE   &kp BSPC &kp RET &trans
             >;
         };
 
