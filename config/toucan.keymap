@@ -27,7 +27,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <230>;
+            tapping-term-ms = <190>;
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
         };
@@ -105,7 +105,7 @@
             bindings = <
                 &trans &trans   &trans   &trans    &trans    &trans     &trans   &trans   &trans &trans &trans &trans
                 &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans     &trans   &trans   &trans &trans &trans &trans
-                &trans &trans   &trans   &trans    &mkp MB4  &mkp MB5   &trans   &trans   &trans &trans &trans &trans
+                &trans &trans   &trans   &trans    &trans    &trans     &trans   &trans   &trans &trans &trans &trans
                                          &trans    &mkp MB2  &mkp MB1   &mkp MB1 &mkp MB2 &trans
             >;
         };
