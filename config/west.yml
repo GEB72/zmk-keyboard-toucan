@@ -14,11 +14,12 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+      revision: v0.3 
     - name: cirque-input-module
       remote: geeksville
       revision: toucan
-#    - name: zmk-rgbled-widget
-#      remote: caksoylar
-#      revision: main
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: v0.3 
   self:
     path: config
