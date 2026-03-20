@@ -133,7 +133,7 @@
             #input-processor-cells = <0>;
  
             codes = <INPUT_BTN_TOUCH>;      // watch for the 'touch' pseudo button
-            bindirgs  = <&mo 5>;            // Activate Layer 5 while held &mo 5
+            bindings  = <&mo 5>;            // Activate Layer 5 while held &mo 5
         };
     };
 };
