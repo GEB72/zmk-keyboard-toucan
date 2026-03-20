@@ -18,7 +18,7 @@
         hm: home_row {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <230>;
+            tapping-term-ms = <210>;
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -27,7 +27,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <180>;
+            tapping-term-ms = <160>;
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
         };
@@ -103,10 +103,10 @@
         mous {
             display-name = "MOUS";
             bindings = <
-                &trans &trans   &trans   &trans    &trans    &trans     &trans   &trans   &trans &trans &trans &trans
-                &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans     &trans   &trans   &trans &trans &trans &trans
-                &trans &trans   &trans   &trans    &trans    &trans     &trans   &trans   &trans &trans &trans &trans
-                                         &trans    &mkp MB2  &mkp MB1   &mkp MB1 &mkp MB2 &trans
+                &trans &trans   &trans   &trans    &trans    &trans    &trans  jtrans  &trans &trans &trans &trans
+                &trans &trans   &trans   &mkp MB2  &mkp MB1  &trans    &trans  &trans  &trans &trans &trans &trans
+                &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans    &trans  &trans  &trans &trans &trans &trans
+                                         &trans    &trans    &trans    &trans  &trans  &trans
             >;
         };
 
