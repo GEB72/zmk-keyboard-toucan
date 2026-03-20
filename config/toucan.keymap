@@ -103,10 +103,10 @@
         mous {
             display-name = "MOUS";
             bindings = <
-                &trans &trans   &trans   &trans    &trans    &trans    &trans  &trans  &trans &trans &trans &trans
-                &trans &trans   &trans   &mkp MB2  &mkp MB1  &trans    &trans  &trans  &trans &trans &trans &trans
-                &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans    &trans  &trans  &trans &trans &trans &trans
-                                         &trans    &trans    &trans    &trans  &trans  &trans
+                &trans &trans   &trans   &trans    &trans    &trans     &trans  &trans  &trans &trans &trans &trans
+                &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans     &trans  &trans  &trans &trans &trans &trans
+                &trans &trans   &trans   &trans    &trans    &trans     &trans  &trans  &trans &trans &trans &trans
+                                         &trans    &mkp MB2  &mkp MB1   &trans  &trans  &trans
             >;
         };
 

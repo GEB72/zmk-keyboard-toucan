@@ -127,14 +127,13 @@
         };        
     };
 
-    // FIXME turn on smooth scrolling
     input_processors {
         touch_processor: touch_processor {
             compatible = "zmk,input-processor-behaviors";
             #input-processor-cells = <0>;
  
             codes = <INPUT_BTN_TOUCH>;      // watch for the 'touch' pseudo button
-            bindings  = <&mo 4>;            // Activate Layer 4 while held &mo 4
+            bindirgs  = <&mo 5>;            // Activate Layer 5 while held &mo 5
         };
     };
 };
